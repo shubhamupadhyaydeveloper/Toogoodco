@@ -1,0 +1,100 @@
+@font-face {
+    font-family: bolde;
+    src: url(/font/Futura-Bold.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/font/HelveticaNowText-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    background-color: rgb(245, 243, 243);
+    text-transform: uppercase;
+}
+    
+#nav {
+  font-family: 'bolde';
+  display: flex;
+  align-items: start;
+  margin: 3vh 4vh;
+  justify-content: space-between;
+  line-height: 5vh;
+  cursor: pointer;
+}
+
+#navoptions {
+    display: flex;
+    gap: 10vh;
+    font-family: 'Regular';
+    font-size: 1vh;
+    letter-spacing: 1.3px;
+}
+
+#herotext {
+    margin-top: 1vh;
+    margin: 16vh 4vh;
+    font-family: 'bolde';
+    font-size: 8vw;
+    line-height: 13.4vw;
+}
+
+.heroinnertext {
+    white-space: nowrap;
+    letter-spacing: -2.2vh;
+    padding-left: -2vh;
+}
+
+.animation {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.animation .item {
+    transform: translateY(100%);
+}
+
+.change{
+    letter-spacing: -2vh;
+}
+
+#page1 {
+    position: relative;
+    width: fit-content;
+    object-fit: cover;
+    margin-right: 1vw;
+}
+
+#video {
+  position: relative;   
+}
+
+video{
+    display: block;
+    width: 95vw;
+    margin: auto;
+}
+
+#bigcircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-family: 'bolde';
+    border-radius: 50%;
+    opacity: 0;
+    margin-left: 1.5vh;
+}
